@@ -1,1 +1,1 @@
-This folder contains practice files. These files were created during the setup, creation and development of a local and remote GitHub repository and the exploration of web application development work flow.
+This folder contains practice files. These files were created during the setup, creation and development of a local repository, remote GitHub repository and the exploration of web application development work flow.
