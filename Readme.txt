@@ -39,7 +39,7 @@ General Workflow:
 6.git remote add origin https://github.com/username/repositoryname.git
 	(if error, git remote rm origin //remove the origin previously added
 7.git remote -v //confirm Git now know's there's a remote repository
-7.git push origin master //"origin master" specifies master branch of repository
+8.git push origin master //"origin master" specifies master branch of repository
 
 
 
