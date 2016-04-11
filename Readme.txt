@@ -25,6 +25,22 @@ git add
 git commit -m
 git log
 git remote add origin https://github.com/username/repositoryname.git
-git remove -v
+git remote -v //confirm remote repository
+git remote rm origin //remove the origin previously added
 git push origin master
+
+General Workflow:
+
+1.git init //initialize Git to begin using Git commands inside the folder. 
+2.ls -a //verify files that Git has created in the directory
+3.git status //view Untracked files
+4.git add //add untracked files to local Git repository to be tracked
+5.git commit -m "commit message in present tense" //-m flag
+6.git remote add origin https://github.com/username/repositoryname.git
+	(if error, git remote rm origin //remove the origin previously added
+7.git remote -v //confirm Git now know's there's a remote repository
+7.git push origin master //"origin master" specifies master branch of repository
+
+
+
 
