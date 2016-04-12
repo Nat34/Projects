@@ -17,7 +17,7 @@ The technology in use for this project are text editors, version control systems
 * Computer
 * Linux Mint OS
 * Terminal
-* text editor
+* Sublime text editor
 * Git, GitHub
 * Unix commands
 * Git commands
