@@ -58,3 +58,7 @@ General Workflow:
 	(if error, git remote rm origin //remove the origin previously added
 7. git remote -v //confirm Git now know's there's a remote repository
 8. git push origin master //"origin master" specifies master branch of repository
+
+* If subfolder files are staged for commit use:
+```
+git add Example2/app.js
