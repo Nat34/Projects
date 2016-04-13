@@ -60,12 +60,12 @@ git remote -v
 git push origin master ry
 git add Example2/app.js 
 ```
-//initialize Git to begin using Git commands inside the folder
-//verify files that Git has created in the directory
-//view Untracked files
-//add untracked files to local Git repository to be tracked
-//-m flag
-//if error, remove the origin previously added* 
-//confirm Git now know's there's a remote repository
-//"origin master" specifies master branch of repository
-//if subfolder files are staged for commit
+1. Initialize Git to begin using Git commands inside the folder
+2. Verify files that Git has created in the directory
+3. View Untracked files
+4. Add untracked files to local Git repository to be tracked
+5. -m flag
+6. If error, remove the origin previously added* 
+7. Confirm Git now know's there's a remote repository
+8. "origin master" specifies master branch of repository
+9. If subfolder files are staged for commit
