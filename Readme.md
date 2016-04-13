@@ -45,6 +45,7 @@ git remote add origin https://github.com/username/repositoryname.git
 git remote -v //confirm remote repository
 git remote rm origin //remove the origin previously added
 git push origin master
+git pull origin master
 ```
 General Workflow:
 
