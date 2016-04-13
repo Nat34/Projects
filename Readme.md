@@ -62,7 +62,7 @@ git add Example2/app.js
 ```
 1. Initialize Git to begin using Git commands inside the folder
 2. Verify files that Git has created in the directory
-3. View Untracked files
+3. View untracked files
 4. Add untracked files to local Git repository to be tracked
 5. -m flag
 6. If error, remove the origin previously added* 
