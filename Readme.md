@@ -1,7 +1,7 @@
 # Workflow
 Web Application Development
 
-This folder contains practice files and documentation. These files were created during the setup, creation and development of a local repository, remote GitHub repository and the exploration of web application development work flow.  These practice files and documentation (notes) are the result of learning (by doing) with the following text:
+This repository contains a practice file and documentation. These files were created during the setup, creation and development of a local repository, remote GitHub repository and the exploration of web application development work flow.  These practice files and documentation (notes) are the result of learning (by doing) with the following text:
 ```
 "Learning Web App Development by Semmy Purewal (O'Reilly). Copyright 2014 Semmy Purewal, 978-1-449-37019-0."
 ```
