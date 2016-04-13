@@ -49,14 +49,23 @@ git pull origin master
 ```
 General Workflow:
 ```
-git init //initialize Git to begin using Git commands inside the folder. 
-ls -a //verify files that Git has created in the directory
-git status //view Untracked files
-git add //add untracked files to local Git repository to be tracked
-git commit -m "commit message in present tense" //-m flag
+git init  
+ls -a 
+git status 
+git add d
+git commit -m "commit message in present tense" 
 git remote add origin https://github.com/username/repositoryname.git
-	(if error, git remote rm origin) //remove the origin previously added
-git remote -v //confirm Git now know's there's a remote repository
-git push origin master //"origin master" specifies master branch of repository
-git add Example2/app.js //if subfolder files are staged for commit
-
+git remote rm origin*	
+git remote -v 
+git push origin master ry
+git add Example2/app.js 
+```
+//initialize Git to begin using Git commands inside the folder
+//verify files that Git has created in the directory
+//view Untracked files
+//add untracked files to local Git repository to be tracked
+//-m flag
+//if error, remove the origin previously added* 
+//confirm Git now know's there's a remote repository
+//"origin master" specifies master branch of repository
+//if subfolder files are staged for commit
