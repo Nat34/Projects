@@ -58,7 +58,10 @@ git remote add origin https://github.com/username/repositoryname.git
 git remote rm origin*	
 git remote -v 
 git push origin master ry
-git add Example2/app.js 
+git add Example2/app.js
+git rm -r one-of-the-directories
+git commit -m "Remove duplicated directory"
+git push origin <your-git-branch> (typically 'master', but not always) 
 ```
 1. Initialize Git to begin using Git commands inside the folder
 2. Verify files that Git has created in the directory
