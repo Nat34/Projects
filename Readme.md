@@ -46,22 +46,18 @@ git remote -v //confirm remote repository
 git remote rm origin //remove the origin previously added
 git push origin master
 git pull origin master
+git rm -r one-of-the-directories
+git commit -m "Remove duplicated directory"
+git push origin <your-git-branch> (typically 'master', but not always
 ```
 General Workflow:
 ```
 git init  
 ls -a 
 git status 
-git add d
-git commit -m "commit message in present tense" 
-git remote add origin https://github.com/username/repositoryname.git
-git remote rm origin*	
-git remote -v 
-git push origin master ry
 git add Example2/app.js
-git rm -r one-of-the-directories
-git commit -m "Remove duplicated directory"
-git push origin <your-git-branch> (typically 'master', but not always) 
+git commit -m "commit message in present tense" 
+git push origin master
 ```
 1. Initialize Git to begin using Git commands inside the folder
 2. Verify files that Git has created in the directory
