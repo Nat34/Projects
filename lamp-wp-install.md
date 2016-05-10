@@ -1,12 +1,16 @@
 ## LAMP stack and WordPress
 
-### Project: Install LAMP stack (Linux OS, Apache HTTP Server, MySQL, PHP)
+### Project: 
+Install LAMP stack (Linux OS, Apache HTTP Server, MySQL, PHP)
 
-### Drivers: All of these components are free and open-source software, they are suitable for building dynamic websites or other web applications, and they are the most used platforms on the Internet today.  An excellent platform to deliver network services, develop all kind of dynamic or static websites, complex web applications with the help of Apache CGI, all of this made with a minimum financial impact using Free and Open Source software and the latest technologies.
+### Drivers: 
+All of these components are free and open-source software, they are suitable for building dynamic websites or other web applications, and they are the most used platforms on the Internet today.  An excellent platform to deliver network services, develop all kind of dynamic or static websites, complex web applications with the help of Apache CGI, all of this made with a minimum financial impact using Free and Open Source software and the latest technologies.
 
-### Technology: Linux Mint OS, Command-line, Apache HTTP Server, MySQL, PHP, Network Config (Basic Network Configurations), APT (Advanced Packaging Tool), phpMyAdmin
+### Technology: 
+Linux Mint OS, Command-line, Apache HTTP Server, MySQL, PHP, Network Config (Basic Network Configurations), APT (Advanced Packaging Tool), phpMyAdmin
 
-### Resources: TechMint, Ubuntu Wiki, Linux Mint Wiki, VimHowto
+### Resources: 
+TechMint, Ubuntu Wiki, Linux Mint Wiki, VimHowto
 
 ###### Verification
 * Verify basic configurations like network connectivity and settings
