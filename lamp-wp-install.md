@@ -34,7 +34,7 @@ $ hostname –f
 `$ sudo apt-get install lamp-server^`
 `$ sudo apt-get install apache2 php5 php5-mysql mysql-client mysql-server`
 * Confirm php status create a `info.php` file in `/var/www/html` server path with the following content: `<?php phpinfo(); ?>`
-* Create info.php outisde this directory first then `$ sudo mv info.php /var/www/html` sudo allows authorized users to run certain programs, etc as root
+* Create info.php outside this directory first then `$ sudo mv info.php /var/www/html` sudo allows authorized users to run certain programs, etc as root
 * Open a browser and enter your server IP address or `http://server_address/info.php`
 
 ###### phpMyAdmin
