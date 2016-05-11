@@ -35,8 +35,12 @@ $ hostname –f
 (refresh your package index)
 
 ###### LAMP stack (Linux-Apache-MySQL-PHP) 
-`$ sudo apt-get install lamp-server^`
-`$ sudo apt-get install apache2 php5 php5-mysql mysql-client mysql-server`
+* `$ sudo apt-get install lamp-server^` or
+* `$ sudo apt-get install apache2 php5 php5-mysql mysql-client mysql-server` or
+* `$ sudo apt-get install apache2`
+* Confirm Apache installed correctly `http://localhost`
+* `$ sudo apt-get install php5 libapache2-mod-php5` 
+* `php-pear` `php-user-cache` suggested (what are these?)
 * Confirm php status create a `info.php` file in `/var/www/html` server path with the following content: `<?php phpinfo(); ?>`
 * Create info.php outside this directory first then `$ sudo mv info.php /var/www/html` sudo allows authorized users to run certain programs, etc as root
 * Open a browser and enter your server IP address or `http://server_address/info.php`
@@ -57,6 +61,9 @@ $ hostname –f
 `vim`
 `:q!`
 `vimtutor`
+
+###### WordPress + LAMP purpose
+* After LAMP stack install you will now have a new folder called `/var/www/`. This is where you will put your site, i.e use the LAMP stack to run a local version of Wordpress on the machine; install the latest version of Wordpress right in the folder `/var/www/` then build the site and test various code changes and plugins "before" uploading to sFTP
 
 ###### WordPress (local LAMP Installation)
 1. Install LAMP
