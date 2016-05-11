@@ -4,7 +4,9 @@
 Install LAMP stack (Linux OS, Apache HTTP Server, MySQL, PHP)
 
 ##Drivers: 
-All of these components are free and open-source software, they are suitable for building dynamic websites or other web applications, and they are the most used platforms on the Internet today.  An excellent platform to deliver network services, develop all kind of dynamic or static websites, complex web applications with the help of Apache CGI, all of this made with a minimum financial impact using Free and Open Source software and the latest technologies.
+* Free and open-source software
+* Suitable for building dynamic websites or other web applications
+* An excellent platform to deliver network services, develop all kind of dynamic or static websites, complex web applications with the help of Apache CGI
 
 ##Technology: 
 Linux Mint OS, Command-line, Apache HTTP Server, MySQL, PHP, Network Config (Basic Network Configurations), APT (Advanced Packaging Tool), phpMyAdmin, filezilla
