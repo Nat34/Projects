@@ -1,7 +1,7 @@
 #LAMP stack and WordPress
 
 ##Project: 
-Install LAMP stack (Linux OS, Apache HTTP Server, MySQL, PHP)
+Install LAMP stack (Linux OS, Apache HTTP Server, MySQL, PHP) *Linux Mint installation not documented
 
 ##Drivers: 
 * Free and open-source software
