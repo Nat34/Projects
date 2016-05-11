@@ -1,16 +1,12 @@
 ## LAMP stack and WordPress
 
-### Project: 
-Install LAMP stack (Linux OS, Apache HTTP Server, MySQL, PHP)
+### Project: Install LAMP stack (Linux OS, Apache HTTP Server, MySQL, PHP)
 
-### Drivers: 
-All of these components are free and open-source software, they are suitable for building dynamic websites or other web applications, and they are the most used platforms on the Internet today.  An excellent platform to deliver network services, develop all kind of dynamic or static websites, complex web applications with the help of Apache CGI, all of this made with a minimum financial impact using Free and Open Source software and the latest technologies.
+### Drivers: All of these components are free and open-source software, they are suitable for building dynamic websites or other web applications, and they are the most used platforms on the Internet today.  An excellent platform to deliver network services, develop all kind of dynamic or static websites, complex web applications with the help of Apache CGI, all of this made with a minimum financial impact using Free and Open Source software and the latest technologies.
 
-### Technology: 
-Linux Mint OS, Command-line, Apache HTTP Server, MySQL, PHP, Network Config (Basic Network Configurations), APT (Advanced Packaging Tool), phpMyAdmin
+### Technology: Linux Mint OS, Command-line, Apache HTTP Server, MySQL, PHP, Network Config (Basic Network Configurations), APT (Advanced Packaging Tool), phpMyAdmin, filezilla
 
-### Resources: 
-TechMint, Ubuntu Wiki, Linux Mint Wiki, VimHowto
+### Resources: TechMint, Ubuntu Wiki, Linux Mint Wiki, VimHowto
 
 ###### Verification
 * Verify basic configurations like network connectivity and settings
@@ -62,6 +58,30 @@ $ hostname –f
 6. `sudo gzip -d /usr/share/doc/wordpress/examples/setup-mysql.gz`
    `sudo bash /usr/share/doc/wordpress/examples/setup-mysql -n wordpress` localhost
 7. Moving a Root install to its own directory (www.example.com for example)
+
+###### WordPress Remote Installation
+1. Download WordPress
+2. Unzip WordPress
+3. Upload using (s)FTP - filezilla
+4. setup a database
+5. WordPres install script @ http://www.yoursitename.com/wordpress
+6. Need to know: database name, username, pw, and database host name (which will save inside the wp-config.php file).
+7. Manually create file: https://codex.wordpress.org/Editing_wp-config.php
+8. This file (wp-config.php) is located in the root of your WordPress file directory and contains your website's base configuration details, such as database connection information.
+
+###### Site Accessibility
+* W3C’s “Web Content Accessibility Guidelines 1.0”, Level “A”
+* Simple and Consistent - "use simple information architecture with uniform navigation and reliable headings throughout. Content layout and graphical design are consistent on every page."
+* Main Site Navigation and Sub-content - Location consistent on every page with sub-content contained within accordian drop-downs
+
+###### Common FTP Commands
+```
+bye **to exit the FTP environment**
+cd  **to change directory on the remote machine**
+get  **to copy one file from the remote machine to the local machine**
+help **to request a list of all available FTP commands**
+lcd **to change directory on your local machine (same as UNIX cd)
+ls **to list the names of the files in the current remote diretory**
 
 
 
