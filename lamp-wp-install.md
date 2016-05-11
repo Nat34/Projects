@@ -14,6 +14,8 @@ Linux Mint OS, Command-line, Apache HTTP Server, MySQL, PHP, Network Config (Bas
 ##Resources: 
 TechMint, Ubuntu Wiki, Linux Mint Wiki, VimHowto
 
+###### Install -> Test, Install -> Test
+
 ###### Verification
 * Verify basic configurations like network connectivity and settings
 * Verify network IP addresses using following command: 
