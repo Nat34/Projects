@@ -80,12 +80,12 @@ $ hostname –f
 
 ###### Common FTP Commands
 ```
-bye *to exit the FTP environment*
-cd  *to change directory on the remote machine*
-get  *to copy one file from the remote machine to the local machine*
-help *to request a list of all available FTP commands*
-lcd *to change directory on your local machine (same as UNIX cd)*
-ls *to list the names of the files in the current remote diretory*
+bye to exit the FTP environment
+cd  to change directory on the remote machine
+get  to copy one file from the remote machine to the local machine
+help to request a list of all available FTP commands
+lcd to change directory on your local machine (same as UNIX cd)
+ls to list the names of the files in the current remote diretory
 ```
 
 
