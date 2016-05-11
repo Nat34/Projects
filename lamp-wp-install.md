@@ -39,6 +39,10 @@ $ hostname –f
 * Create info.php outside this directory first then `$ sudo mv info.php /var/www/html` sudo allows authorized users to run certain programs, etc as root
 * Open a browser and enter your server IP address or `http://server_address/info.php`
 
+###### Display Recently Installed Software
+`cat /var/log/dpkg.log | grep “\ install\ “`
+
+
 ###### phpMyAdmin
 `$ sudo apt-get install phpmyadmin` Confirm with `http://server_address/phpmyadmin/`
 
