@@ -37,10 +37,11 @@ $ hostname –f
 ###### LAMP stack (Linux-Apache-MySQL-PHP) 
 * `$ sudo apt-get install lamp-server^` or
 * `$ sudo apt-get install apache2 php5 php5-mysql mysql-client mysql-server` or
-###### Apache2
-* `$ sudo apt-get install apache2`
-* Confirm Apache installed correctly `http://localhost`
-* If Error: 
+
+###### Apache
+`$ sudo apt-get install apache2`
+Confirm Apache installed correctly `http://localhost`
+If Error: 
 ```
 apache2: Could not determine the server's fully qualified domain name, 
 using 127.0.0.1 for ServerName
@@ -49,11 +50,12 @@ using 127.0.0.1 for ServerName
 `sudo a2enconf fqdn` - (enable your new configuration file by running this command)
 `sudo service apache2 reload` - (activate new configuration)
 
-* `$ sudo apt-get install php5 libapache2-mod-php5` 
-* `php-pear` `php-user-cache` suggested (what are these?)
-* Confirm php status create a `info.php` file in `/var/www/html` server path with the following content: `<?php phpinfo(); ?>`
-* Create info.php outside this directory first then `$ sudo mv info.php /var/www/html` sudo allows authorized users to run certain programs, etc as root
-* Open a browser and enter your server IP address or `http://server_address/info.php`
+###### php
+`$ sudo apt-get install php5 libapache2-mod-php5` (`php-pear` `php-user-cache`) suggested (what are these?)
+Confirm php status: Create a `info.php` file in `/var/www/html` server path with the following content: `<?php phpinfo(); ?>`
+1. Create info.php outside this directory first
+2. `$ sudo mv info.php /var/www/html` sudo allows authorized users to run certain programs, etc as root
+3. Open a browser and enter your server IP address or `http://server_address/info.php`
 
 ###### Display Recently Installed Software
 `cat /var/log/dpkg.log | grep “\ install\ “`
