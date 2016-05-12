@@ -53,7 +53,7 @@ using 127.0.0.1 for ServerName
 ###### php
 ```
 $ sudo apt-get install php5 libapache2-mod-php5
-Create a `info.php` file in `/var/www/html` server path with the following content: `<?php phpinfo(); ?>`
+$ sudo gedit /var/www/html/info.php with the following content: `<?php phpinfo(); ?>`
 $ sudo mv info.php /var/www/html sudo allows authorized users to run certain programs, etc as root
 `http://server_address/info.php`
 ```
