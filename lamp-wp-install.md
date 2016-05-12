@@ -57,6 +57,12 @@ $ sudo gedit /var/www/html/info.php with the following content: `<?php phpinfo()
 $ sudo mv info.php /var/www/html sudo allows authorized users to run certain programs, etc as root
 `http://server_address/info.php`
 ```
+###### MySQL
+[ ] $ mysql -u root -p
+[ ] $ mysql> CREATE DATABASE database1; Create a mysql database
+[ ] $ mysql> GRANT ALL PRIVILEGES ON *.* TO 'yourusername'@'localhost' IDENTIFIED BY 'yourpassword' WITH GRANT OPTION;
+[ ] $ mysql> \q To exit the mysql prompt
+[ ] $ mysql -u root -p to use MySQL again
 
 ###### Display Recently Installed Software
 `cat /var/log/dpkg.log | grep “\ install\ “`
