@@ -51,11 +51,12 @@ using 127.0.0.1 for ServerName
 `sudo service apache2 reload` - (activate new configuration)
 
 ###### php
-`$ sudo apt-get install php5 libapache2-mod-php5` (`php-pear` `php-user-cache`) suggested (what are these?)
-Confirm php status: Create a `info.php` file in `/var/www/html` server path with the following content: `<?php phpinfo(); ?>`
-1. Create info.php outside this directory first
-2. `$ sudo mv info.php /var/www/html` sudo allows authorized users to run certain programs, etc as root
-3. Open a browser and enter your server IP address or `http://server_address/info.php`
+```
+$ sudo apt-get install php5 libapache2-mod-php5
+Create a `info.php` file in `/var/www/html` server path with the following content: `<?php phpinfo(); ?>`
+$ sudo mv info.php /var/www/html sudo allows authorized users to run certain programs, etc as root
+`http://server_address/info.php`
+```
 
 ###### Display Recently Installed Software
 `cat /var/log/dpkg.log | grep “\ install\ “`
