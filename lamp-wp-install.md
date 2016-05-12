@@ -37,8 +37,18 @@ $ hostname –f
 ###### LAMP stack (Linux-Apache-MySQL-PHP) 
 * `$ sudo apt-get install lamp-server^` or
 * `$ sudo apt-get install apache2 php5 php5-mysql mysql-client mysql-server` or
+###### Apache2
 * `$ sudo apt-get install apache2`
 * Confirm Apache installed correctly `http://localhost`
+* If Error: 
+```
+apache2: Could not determine the server's fully qualified domain name, 
+using 127.0.0.1 for ServerName
+```
+`$ echo "ServerName localhost" | sudo tee /etc/apache2/conf.d/fqdn` (used hostname not localhost in this instance)
+`sudo a2enconf fqdn` - (enable your new configuration file by running this command)
+`sudo service apache2 reload` - (activate new configuration)
+
 * `$ sudo apt-get install php5 libapache2-mod-php5` 
 * `php-pear` `php-user-cache` suggested (what are these?)
 * Confirm php status create a `info.php` file in `/var/www/html` server path with the following content: `<?php phpinfo(); ?>`
