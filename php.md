@@ -123,6 +123,12 @@ function writeMsg() {
 writeMsg(); // call the function
 ?>
 ```
+###### foreach loop vs. for loop within an associative array
+
+* Access: numerical / associative
+* Numerical: PHP handles the location numbers / each time a value is assigned to the array, the first empty location within the array is used to store the value
+* Associative: Reference the items in the array by name rather than by number / give each element in the array an identifying name and explanatory string value
+
 
 
 
