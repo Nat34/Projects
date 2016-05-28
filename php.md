@@ -128,7 +128,14 @@ writeMsg(); // call the function
 * Access: numerical / associative
 * Numerical: PHP handles the location numbers / each time a value is assigned to the array, the first empty location within the array is used to store the value
 * Associative: Reference the items in the array by name rather than by number / give each element in the array an identifying name and explanatory string value
-
+```
+<?php
+$friends = array('Alejandro', 'Andrea', 'Emma', 'Kate', 'Sean',);
+	echo "<h1>FRIENDS</h1>";
+for ($i = 0 ; $i < 5 ; ++$i)
+	echo "<br>$i: $friends[$i]<br>";
+?>
+```	
 
 
 
