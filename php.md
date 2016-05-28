@@ -92,10 +92,11 @@ The === operator can be used to distinguish boolean from non-boolean values.
 
 Within a regular assignment, the left operand gets set the value of the assignment of the expression on the right, whereas assignment by reference points the left and right operand to the same place.
 
-PHP Syntax: $a = $b
-              $a is pointing to $b
-PHP Syntax: $a =& $b
-              $a is not pointing to $b or vice        versa. $a and $b are pointing the same place
+PHP Syntax:`$a = $b`
+* `$a is pointing to $b`
+PHP Syntax:`$a =& $b`
+* $a is not pointing to $b or vice versa.
+* $a and $b are pointing the same place
 
 Explain how to pass a variable by reference to a function.
 
@@ -103,12 +104,15 @@ To pass a variable by reference to a function
 1. Declare the function by giving the function  a name that reflects what the function does
 2. Specify the variable after the function name, inside the parentheses with the reference sign on the variable.  
 
+```
 function functionName(&$a) {
     code to be executed;
 }
+```
 
 To call the function, just write its name:
 
+```
 <?php
 function writeMsg() {
     echo "Hello world!";
@@ -116,7 +120,7 @@ function writeMsg() {
 
 writeMsg(); // call the function
 ?>
-
+```
 
 
 
