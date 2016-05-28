@@ -18,10 +18,10 @@ Learning PHP, MySQL, JavaScript, and CSS text, Mozilla Developer Network (MDN),
 ## Task List
 
 
-- [ X ] Installing LAMP
-- [ X ] PHP Structure
-- [ X ] Basic Syntax
-- [ X ] Operators, Variables, and more
+- [x] Installing LAMP
+- [x] PHP Structure
+- [x] Basic Syntax
+- [x] Operators, Variables, and more
 - [ ] Expressions and Control Flow
 - [ ] PHP Functions and Objects
 - [ ] PHP Arrays
@@ -93,7 +93,7 @@ The === operator can be used to distinguish boolean from non-boolean values.
 Within a regular assignment, the left operand gets set the value of the assignment of the expression on the right, whereas assignment by reference points the left and right operand to the same place.
 
 PHP Syntax:`$a = $b`
-* `$a is pointing to $b`
+* $a is pointing to $b
 
 PHP Syntax:`$a =& $b`
 * $a is not pointing to $b or vice versa.
