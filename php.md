@@ -154,6 +154,9 @@ foreach ($artfriends as $name => $city)
 
 ?>
 ```
-
+###### Test Your Knowledge
+   Explain why you would use a foreach loop instead of a for loop, when using data in an associative array.   
+   Answer : I would use a foreach loop instead of a for loop to create a loop that extracts values to the variables, since associative arrays contain items referenced by name using the index => value format and they do not require numeric indexing.
+   
 
 
