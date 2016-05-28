@@ -28,6 +28,8 @@ Learning PHP, MySQL, JavaScript, and CSS text, Mozilla Developer Network (MDN),
 
 ## Examples:
 
+###### Modulus Operator
+
 ```
 <?php
   for ($i = 1; $i <= 10; $i++) {
@@ -60,3 +62,61 @@ for ($i = 1; $i <= 100; ++$i) {
 }
 ?>
 ```
+###### 12^9
+
+Everything that exists in one but not both
+12 is made up of 8 and 4. 9 is made up of 9 and 1.
+8 exists in both, but 1 and 4 exist in one but not both.
+
+The ^ symbol is a bitwise operator, allowing evaluation and manipulation of specific bits within an integer.
+
+```
+<?php
+$x = 12^9;
+print $x; //output 5
+?>
+
+```
+###### the "==" operator and the "===" operator
+
+The Equal operator returns true if $x is equal to $y. The Identical operator returns true if $x is equal to $y, and they are of the same type. Both are comparison operators. 
+
+```
+$x == $y
+$x === $y
+```
+
+The === operator can be used to distinguish boolean from non-boolean values.
+
+###### Regular Assignment vs. Assigning by reference
+
+Within a regular assignment, the left operand gets set the value of the assignment of the expression on the right, whereas assignment by reference points the left and right operand to the same place.
+
+PHP Syntax: $a = $b
+              $a is pointing to $b
+PHP Syntax: $a =& $b
+              $a is not pointing to $b or vice        versa. $a and $b are pointing the same place
+
+Explain how to pass a variable by reference to a function.
+
+To pass a variable by reference to a function
+1. Declare the function by giving the function  a name that reflects what the function does
+2. Specify the variable after the function name, inside the parentheses with the reference sign on the variable.  
+
+function functionName(&$a) {
+    code to be executed;
+}
+
+To call the function, just write its name:
+
+<?php
+function writeMsg() {
+    echo "Hello world!";
+}
+
+writeMsg(); // call the function
+?>
+
+
+
+
