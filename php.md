@@ -1,10 +1,10 @@
-# Setting Up a Development Server
+# PHP 
 
 
-This folder contains practice files.  These files are created while learning to setup a development server.
+This folder contains practice files.  These files are created while learning PHP.
 
 ## Project: 
-To setup a development server
+To setup a development server, learn a simple but powerful language
 
 ## Drivers:
 Testing is fast, errors or security problems are kept local
@@ -17,8 +17,14 @@ Learning PHP, MySQL, JavaScript, and CSS text, Mozilla Developer Network (MDN),
 
 ## Task List
 
-My First Inter*active* App
+
 - [ ] Installing LAMP
+- [ ] PHP Structure
+- [ ] Basic Syntax
+- [ ] Operators, Variables, and more
+- [ ] Expressions and Control Flow
+- [ ] PHP Functions and Objects
+- [ ] PHP Arrays
 
 ## Examples:
 
