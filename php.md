@@ -18,10 +18,10 @@ Learning PHP, MySQL, JavaScript, and CSS text, Mozilla Developer Network (MDN),
 ## Task List
 
 
-- [ ] Installing LAMP
-- [ ] PHP Structure
-- [ ] Basic Syntax
-- [ ] Operators, Variables, and more
+- [ X ] Installing LAMP
+- [ X ] PHP Structure
+- [ X ] Basic Syntax
+- [ X ] Operators, Variables, and more
 - [ ] Expressions and Control Flow
 - [ ] PHP Functions and Objects
 - [ ] PHP Arrays
@@ -94,6 +94,7 @@ Within a regular assignment, the left operand gets set the value of the assignme
 
 PHP Syntax:`$a = $b`
 * `$a is pointing to $b`
+
 PHP Syntax:`$a =& $b`
 * $a is not pointing to $b or vice versa.
 * $a and $b are pointing the same place
@@ -101,6 +102,7 @@ PHP Syntax:`$a =& $b`
 Explain how to pass a variable by reference to a function.
 
 To pass a variable by reference to a function
+
 1. Declare the function by giving the function  a name that reflects what the function does
 2. Specify the variable after the function name, inside the parentheses with the reference sign on the variable.  
 
