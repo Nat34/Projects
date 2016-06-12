@@ -123,6 +123,21 @@ $ mysql -u root -p to use MySQL again
 11. mysqladmin -u root -p create drupal8 //create db titled "drupal8"
 12. localhost/phpmyadmin //enter username "root" and pw
 13. create new user (Data, Structure, Admin rights selected)
+14. localhost/drupal-8.1.2
+15. choose language
+16. choose profile
+17. requirements not met: enable clean URL --> edit Apache2.conf, change None to All
+```
+<Directory /var/www/>
+	Options Indexes FollowSymLinks
+	AllowOverride All
+	Require all granted
+</Directory>
+```
+18. requirements not met: Drupal requires you to enable the PHP extensions in the following list 'GD'
+```
+$ sudo apt-get install php5-gd php-db php5-mysq
+$ sudo /etc/init.d/apache2 restart
 
 ###### Site Accessibility
 * W3C’s “Web Content Accessibility Guidelines 1.0”, Level “A”
