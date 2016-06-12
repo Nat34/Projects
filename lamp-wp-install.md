@@ -114,7 +114,7 @@ $ mysql -u root -p to use MySQL again
 2. sudo apt-get install phpmyadmin
 3. wget ...drupal-8.1.2.tar.gz
 4. tar -zxvf drupal-8.1.2.tar.gz [tab] - for autocomplete
-5. sudo mv drupal-8.1.2.tar.gz
+5. sudo mv drupal-8.1.2.tar.gz /var/www/html
 6. cd /var/wwww
 7. cd /var/www/drupal-8.1.2
 8. cp sites/default/default.settings.php sites/default/settings.php
