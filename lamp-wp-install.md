@@ -138,6 +138,7 @@ $ mysql -u root -p to use MySQL again
 ```
 $ sudo apt-get install php5-gd php-db php5-mysq
 $ sudo /etc/init.d/apache2 restart
+```
 
 ###### Site Accessibility
 * W3C’s “Web Content Accessibility Guidelines 1.0”, Level “A”
