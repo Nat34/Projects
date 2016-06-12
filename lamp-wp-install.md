@@ -1,4 +1,4 @@
-#LAMP stack and WordPress
+#LAMP stack  / WordPress / Drupal-8.1.2
 
 ##Project: 
 Install LAMP stack (Linux OS, Apache HTTP Server, MySQL, PHP) *Linux Mint installation not documented
@@ -108,6 +108,21 @@ $ mysql -u root -p to use MySQL again
 6. Need to know: database name, username, pw, and database host name (which will save inside the wp-config.php file).
 7. Manually create file: https://codex.wordpress.org/Editing_wp-config.php
 8. This file `wp-config.php` is located in the root of your WordPress file directory and contains your website's base configuration details, such as database connection information.
+
+###### Drupal Local Installation
+1. sudo apt-get install lamp^
+2. sudo apt-get install phpmyadmin
+3. wget ...drupal-8.1.2.tar.gz
+4. tar -zxvf drupal-8.1.2.tar.gz [tab] - for autocomplete
+5. sudo mv drupal-8.1.2.tar.gz
+6. cd /var/wwww
+7. cd /var/www/drupal-8.1.2
+8. cp sites/default/default.settings.php sites/default/settings.php
+9. chmod a+w sites/default/settings.php
+10. chmod a+w sites/default/
+11. mysqladmin -u root -p create drupal8 //create db titled "drupal8"
+12. localhost/phpmyadmin //enter username "root" and pw
+13. create new user (Data, Structure, Admin rights selected)
 
 ###### Site Accessibility
 * W3C’s “Web Content Accessibility Guidelines 1.0”, Level “A”
