@@ -110,17 +110,17 @@ $ mysql -u root -p to use MySQL again
 8. This file `wp-config.php` is located in the root of your WordPress file directory and contains your website's base configuration details, such as database connection information.
 
 ###### Drupal Local Installation
-1. sudo apt-get install lamp^
-2. sudo apt-get install phpmyadmin
-3. wget ...drupal-8.1.2.tar.gz
-4. tar -zxvf drupal-8.1.2.tar.gz [tab] - for autocomplete
-5. sudo mv drupal-8.1.2.tar.gz /var/www/html
-6. cd /var/wwww
-7. cd /var/www/drupal-8.1.2
-8. cp sites/default/default.settings.php sites/default/settings.php
-9. chmod a+w sites/default/settings.php
-10. chmod a+w sites/default/
-11. mysqladmin -u root -p create drupal8 //create db titled "drupal8"
+1. `sudo apt-get install lamp^`
+2. `sudo apt-get install phpmyadmin`
+3. `wget ...drupal-8.1.2.tar.gz`
+4. `tar -zxvf drupal-8.1.2.tar.gz ` [tab] - for autocomplete
+5. `sudo mv drupal-8.1.2.tar.gz /var/www/html`
+6. `cd /var/wwww`
+7. `cd /var/www/drupal-8.1.2`
+8. `cp sites/default/default.settings.php sites/default/settings.php`
+9. `chmod a+w sites/default/settings.php`
+10. `chmod a+w sites/default/`
+11. `mysqladmin -u root -p create drupal8` //create db titled "drupal8"
 12. localhost/phpmyadmin //enter username "root" and pw
 13. create new user (Data, Structure, Admin rights selected)
 14. localhost/drupal-8.1.2
@@ -139,6 +139,10 @@ $ mysql -u root -p to use MySQL again
 $ sudo apt-get install php5-gd php-db php5-mysq
 $ sudo /etc/init.d/apache2 restart
 ```
+19. database configuration
+20. configure site
+21. `sudo chmod -v 755 /var/www/html/drupal-8.1.2/sites/default/
+22. `sudo chmod -v 755 /var/www/html/drupal-8.1.2./sites/default/settings.php
 
 ###### Site Accessibility
 * W3C’s “Web Content Accessibility Guidelines 1.0”, Level “A”
