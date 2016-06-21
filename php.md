@@ -2,8 +2,10 @@
 ## General Knowledge
 
 #### 1. Explain what the modulus operator does. 
-	* Answer: The modulus operator returns the remainder from integer division. 
-	* Examples:
+
+The modulus operator returns the remainder from integer division. 
+
+**Examples**
 
 ```
 <?php
@@ -36,7 +38,9 @@ for ($i = 1; $i <= 100; ++$i) {
 ```
 ### 2. What does the expression `12^9` mean?
 
-* Answer: The `^` symbol is a bitwise operator, allowing evaluation and manipulation of specific bits within an integer. Everything that exists in one but not both. 12 is made up of 8 and 4. 9 is made up of 9 and 1. 8 exists in both, but 1 and 4 exist in one but not both.
+The `^` symbol is a bitwise operator, allowing evaluation and manipulation of specific bits within an integer. Everything that exists in one but not both. 12 is made up of 8 and 4. 9 is made up of 9 and 1. 8 exists in both, but 1 and 4 exist in one but not both.
+
+**Example**
 
 ```
 <?php
@@ -47,7 +51,9 @@ print $x; //output 5
 ```
 ### 3. Explain the difference between the "==" operator and the "===" operator.
 
-* Answer: The Equal operator returns true if `$x` is equal to `$y`. The Identical operator returns true if `$x` is equal to `$y`, and they are of the same type. Both are comparison operators. The `===` operator can be used to distinguish boolean from non-boolean values.
+The Equal operator returns true if `$x` is equal to `$y`. The Identical operator returns true if `$x` is equal to `$y`, and they are of the same type. Both are comparison operators. The `===` operator can be used to distinguish boolean from non-boolean values.
+
+**Example**
 
 ```
 <?php
@@ -70,8 +76,11 @@ if ($x === $y) {
 ```
 
 
-4. (4) Explain the basic difference between a regular assignment, and assigning by reference. 
-	* Answer: Within a regular assignment, the left operand gets set the value of the assignment of the expression on the right, whereas assignment by reference points the left and right operand to the same place.
+### 4. Explain the basic difference between a regular assignment, and assigning by reference. 
+
+Within a regular assignment, the left operand gets set the value of the assignment of the expression on the right, whereas assignment by reference points the left and right operand to the same place.
+
+**Example**
 
 `$x = $y`
 * $x is pointing to $y
@@ -104,8 +113,11 @@ function writeMsg() {
 writeMsg(); // call the function
 ?>
 ```
-5. (5) Explain why you would use a `foreach` loop instead of a `for` loop, when using data in an associative array.
-	* Answer: The conversation here is between numerical vs. associative.  In an associative array PHP references the items in the array by name rather than by number. You give each element in the array an identifying name and explanatory string value.  I would use a `foreach` loop instead of a `for` loop to create a loop that extracts values to the variables, since associative arrays contain items referenced by name using the **index => value** format and they do not require numeric indexing.
+### 5. Explain why you would use a `foreach` loop instead of a `for` loop, when using data in an associative array.
+
+The conversation here is between numerical vs. associative.  In an associative array PHP references the items in the array by name rather than by number. You give each element in the array an identifying name and explanatory string value.  I would use a `foreach` loop instead of a `for` loop to create a loop that extracts values to the variables, since associative arrays contain items referenced by name using the **index => value** format and they do not require numeric indexing.
+
+**Examples**
 
 ```
 <?php
@@ -129,20 +141,22 @@ foreach ($myfriends as $name => $city)
 
 ?>
 ```
-6. (6) Describe an example of when omitting a break from a switch case would be helpful.
-	* Answer: Omitting a break from a switch means you would not exit the control structure, but it seems to be the default behavior to end each switch with a break. Perhaps omitting the break could be helpful if you want to run multiple case statements.
-7. (7) Explain the difference between public, private, and protected for class properties and methods.
+### 6. Describe an example of when omitting a break from a switch case would be helpful.
+
+Omitting a break from a switch means you would not exit the control structure, but it seems to be the default behavior to end each switch with a break. Perhaps omitting the break could be helpful if you want to run multiple case statements.
+
+### 7. Explain the difference between public, private, and protected for class properties and methods.
 	* Public: any code could directly access and change the values for these class properties and methods
 	* Private: class properties and methods cannot be accessed outside of the class itself
 	* Protected: class properities and methods can be accessed within the class itself and by inherited classes
 	* var: treated as public
-8. (8) Explain what it means to define a method as abstract.
+### 8. Explain what it means to define a method as abstract.
 	* Answer:  Defining a method as abtract means to modify the properties after inheritance.
 	* Example use:
 	* When its helpful:
-9. (9) Explain what it means to define a method as static.
+### 9. Explain what it means to define a method as static.
 	*Answer:
-10. Explain what it means to define a method as final
+### 10. Explain what it means to define a method as final
 11. When running PHP from the command line, describe how to access command input data inside the script.
 12. When fetching content with an HTTP request, describe how to get header information from the response.
 
