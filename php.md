@@ -22,9 +22,9 @@ Learning PHP, MySQL, JavaScript, and CSS text, Mozilla Developer Network (MDN),
 - [x] PHP Structure
 - [x] Basic Syntax
 - [x] Operators, Variables, and more
-- [ ] Expressions and Control Flow
-- [ ] PHP Functions and Objects
-- [ ] PHP Arrays
+- [x] Expressions and Control Flow
+- [x] PHP Functions and Objects
+- [x] PHP Arrays
 
 ## Examples:
 
