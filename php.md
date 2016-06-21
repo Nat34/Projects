@@ -151,13 +151,20 @@ Omitting a break from a switch means you would not exit the control structure, b
 	* Protected: class properities and methods can be accessed within the class itself and by inherited classes
 	* var: treated as public
 ### 8. Explain what it means to define a method as abstract.
-	* Answer:  Defining a method as abtract means to modify the properties after inheritance.
-	* Example use:
-	* When its helpful:
+
+Defining a method as abtract means to modify the properties after inheritance.
+
+**Example**
+
+**When is it helpful**
+
 ### 9. Explain what it means to define a method as static.
-	*Answer:
+
+
 ### 10. Explain what it means to define a method as final
-11. When running PHP from the command line, describe how to access command input data inside the script.
-12. When fetching content with an HTTP request, describe how to get header information from the response.
+
+### 11. When running PHP from the command line, describe how to access command input data inside the script.
+
+### 12. When fetching content with an HTTP request, describe how to get header information from the response.
 
 
