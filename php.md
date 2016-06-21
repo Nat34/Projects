@@ -1,7 +1,7 @@
 # PHP
 ## General Knowledge
 
-(1.) Explain what the modulus operator does. 
+1. Explain what the modulus operator does. 
 	* Answer: The modulus operator returns the remainder from integer division. 
 	* Examples:
 
@@ -127,9 +127,9 @@ foreach ($myfriends as $name => $city)
 
 ?>
 ```
-6. Describe an example of when omitting a break from a switch case would be helpful.
+6. (6) Describe an example of when omitting a break from a switch case would be helpful.
 	* Answer: 
-7. Explain the difference between public, private, and protected for class properties and methods.
+7. (7) Explain the difference between public, private, and protected for class properties and methods.
 	* Public: any code could directly access and change the values for these class properties and methods
 	* Private: class properties and methods cannot be accessed or inherited
 	* Protected: class properties and methods can be inherited and changed
