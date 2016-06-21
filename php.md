@@ -1,34 +1,9 @@
-# PHP 
+# PHP
+## General Knowledge
 
-
-This folder contains practice files.  These files are created while learning PHP.
-
-## Project: 
-To setup a development server, learn a simple but powerful language
-
-## Drivers:
-Testing is fast, errors or security problems are kept local
-
-## Technology: 
-LAMP(Linux, Apache, MySQL, and PHP)
-
-## Resources: 
-Learning PHP, MySQL, JavaScript, and CSS text, Mozilla Developer Network (MDN), 
-
-## Task List
-
-
-- [x] Installing LAMP
-- [x] PHP Structure
-- [x] Basic Syntax
-- [x] Operators, Variables, and more
-- [x] Expressions and Control Flow
-- [x] PHP Functions and Objects
-- [x] PHP Arrays
-
-## Examples:
-
-###### Modulus Operator
+1. Explain what the modulus operator does. 
+	* Answer: The modulus operator returns the remainder from integer division. 
+	* Example:
 
 ```
 <?php
@@ -41,7 +16,7 @@ Learning PHP, MySQL, JavaScript, and CSS text, Mozilla Developer Network (MDN),
 ?>
 ```
 
-Use case: FizzBuzz game: Counting incrementally, print numbers 1 through 100, replacing any number divisible by three with the word "fizz", any number divisible by five with the word "buzz", and any number divisible by three AND five with the word "FizzBuzz"
+	* Example: Counting incrementally, print numbers 1 through 100, replacing any number divisible by three with the word "fizz", any number divisible by five with the word "buzz", and any number divisible by three AND five with the word "FizzBuzz"
 
 ```
 <?php
@@ -62,13 +37,8 @@ for ($i = 1; $i <= 100; ++$i) {
 }
 ?>
 ```
-###### 12^9
-
-Everything that exists in one but not both
-12 is made up of 8 and 4. 9 is made up of 9 and 1.
-8 exists in both, but 1 and 4 exist in one but not both.
-
-The ^ symbol is a bitwise operator, allowing evaluation and manipulation of specific bits within an integer.
+2. What does the expression `12^9` mean?
+	* Answer: The `^` symbol is a bitwise operator, allowing evaluation and manipulation of specific bits within an integer. Everything that exists in one but not both. 12 is made up of 8 and 4. 9 is made up of 9 and 1. 8 exists in both, but 1 and 4 exist in one but not both.
 
 ```
 <?php
@@ -77,16 +47,29 @@ print $x; //output 5
 ?>
 
 ```
-###### the "==" operator and the "===" operator
-
-The Equal operator returns true if $x is equal to $y. The Identical operator returns true if $x is equal to $y, and they are of the same type. Both are comparison operators. 
+3. Explain the difference between the "==" operator and the "===" operator.
+	* Answer: The Equal operator returns true if `$x` is equal to `$y`. The Identical operator returns true if `$x` is equal to `$y`, and they are of the same type. Both are comparison operators. The `===` operator can be used to distinguish boolean from non-boolean values.
 
 ```
-$x == $y
-$x === $y
+<?php
+
+$x = 3;
+$y = "3";
+
+if ($x == $y) {
+    echo 'true.</br>';
+} else {
+    echo 'false.';
+}
+
+if ($x === $y) {
+    echo 'true.';
+} else {
+    echo 'false.';
+}
+?>
 ```
 
-The === operator can be used to distinguish boolean from non-boolean values.
 
 ###### Regular Assignment vs. Assigning by reference
 
