@@ -1,7 +1,7 @@
 # PHP
 ## General Knowledge
 
-1. Explain what the modulus operator does. 
+(1.) Explain what the modulus operator does. 
 	* Answer: The modulus operator returns the remainder from integer division. 
 	* Examples:
 
