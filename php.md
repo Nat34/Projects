@@ -141,6 +141,20 @@ foreach ($myfriends as $name => $city)
 9. (9) Explain what it means to define a method as static.
 	*Answer:
 10. Explain what it means to define a method as final
+```
+<?php
+echo "<br>";
+$myfriends = array('Emma' => "Bridgeport",
+                 'Alejandro' => "Spain",
+                 'Kate' => "Denver",
+                 'Andrea' => "Cicero",
+                 'Sean' => "Quincy");
+
+foreach ($myfriends as $name => $city)
+        echo "$name lives in $city!<br>";
+
+?>
+```
 11. When running PHP from the command line, describe how to access command input data inside the script.
 12. When fetching content with an HTTP request, describe how to get header information from the response.
 
