@@ -34,7 +34,7 @@ for ($i = 1; $i <= 100; ++$i) {
 }
 ?>
 ```
-2. (2) What does the expression `12^9` mean?
+### 2. What does the expression `12^9` mean?
 	* Answer: The `^` symbol is a bitwise operator, allowing evaluation and manipulation of specific bits within an integer. Everything that exists in one but not both. 12 is made up of 8 and 4. 9 is made up of 9 and 1. 8 exists in both, but 1 and 4 exist in one but not both.
 
 ```
