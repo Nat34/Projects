@@ -68,18 +68,17 @@ if ($x === $y) {
 ```
 
 
-###### Regular Assignment vs. Assigning by reference
+4. Explain the basic difference between a regular assignment, and assigning by reference. 
+	* Answer: Within a regular assignment, the left operand gets set the value of the assignment of the expression on the right, whereas assignment by reference points the left and right operand to the same place.
 
-Within a regular assignment, the left operand gets set the value of the assignment of the expression on the right, whereas assignment by reference points the left and right operand to the same place.
+`$x = $y`
+* $x is pointing to $y
 
-PHP Syntax:`$a = $b`
-* $a is pointing to $b
+`$x =& $y`
+* $x is not pointing to $y or vice versa.
+* $x and $y are pointing the same place
 
-PHP Syntax:`$a =& $b`
-* $a is not pointing to $b or vice versa.
-* $a and $b are pointing the same place
-
-Explain how to pass a variable by reference to a function.
+	* Explain how to pass a variable by reference to a function.
 
 To pass a variable by reference to a function
 
@@ -103,40 +102,31 @@ function writeMsg() {
 writeMsg(); // call the function
 ?>
 ```
-###### foreach loop vs. for loop within an associative array
-
-* Access: numerical / associative
-* Numerical: PHP handles the location numbers / each time a value is assigned to the array, the first empty location within the array is used to store the value
-* Associative: Reference the items in the array by name rather than by number / give each element in the array an identifying name and explanatory string value
-* Names (Alejandro, Andea) are called *indexes or keys*
-* Item are called *values*
-* **index => value** format
+5. Explain why you would use a `foreach` loop instead of a `for` loop, when using data in an associative array.
+	* Answer: The conversation here is between numerical vs. associative.  In an associative array PHP references the items in the array by name rather than by number. You give each element in the array an identifying name and explanatory string value.  I would use a `foreach` loop instead of a `for` loop to create a loop that extracts values to the variables, since associative arrays contain items referenced by name using the **index => value** format and they do not require numeric indexing.
 
 ```
 <?php
 $friends = array('Alejandro', 'Andrea', 'Emma', 'Kate', 'Sean',);
 	echo "<h1>FRIENDS</h1>";
-for ($i = 0 ; $i < 5 ; ++$i)
+for ($i = 0 ; $i <= 4 ; ++$i)
 	echo "<br>$i: $friends[$i]<br>";
 ?>
 ```	
 ```
 <?php
 echo "<br>";
-$artfriends = array('Emma' => "Bridgeport",
+$myfriends = array('Emma' => "Bridgeport",
                  'Alejandro' => "Spain",
                  'Kate' => "Denver",
                  'Andrea' => "Cicero",
                  'Sean' => "Quincy");
 
-foreach ($artfriends as $name => $city)
+foreach ($myfriends as $name => $city)
         echo "$name lives in $city!<br>";
 
 ?>
 ```
-###### Test Your Knowledge
-   Explain why you would use a foreach loop instead of a for loop, when using data in an associative array.   
-   Answer : I would use a foreach loop instead of a for loop to create a loop that extracts values to the variables, since associative arrays contain items referenced by name using the index => value format and they do not require numeric indexing.
    
 
 
