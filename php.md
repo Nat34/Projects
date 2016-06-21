@@ -3,7 +3,7 @@
 
 1. Explain what the modulus operator does. 
 	* Answer: The modulus operator returns the remainder from integer division. 
-	* Example:
+	* Examples:
 
 ```
 <?php
@@ -15,9 +15,6 @@
    }
 ?>
 ```
-
-	* Example: Counting incrementally, print numbers 1 through 100, replacing any number divisible by three with the word "fizz", any number divisible by five with the word "buzz", and any number divisible by three AND five with the word "FizzBuzz"
-
 ```
 <?php
 
