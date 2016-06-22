@@ -36,6 +36,8 @@ for ($i = 1; $i <= 100; ++$i) {
 }
 ?>
 ```
+
+
 ### 2. What does the expression `12^9` mean?
 
 The `^` symbol is a bitwise operator, allowing evaluation and manipulation of specific bits within an integer. Everything that exists in one but not both. 12 is made up of 8 and 4. 8 is made up of 9 and 1. 8 exists in both, but 1 and 4 exist in one but not both.
@@ -76,7 +78,6 @@ if ($x === $y) {
 ?>
 ```
 
-
 ### 4. Explain the basic difference between a regular assignment, and assigning by reference. 
 
 Within a regular assignment, the left operand gets set the value of the assignment of the expression on the right, whereas assignment by reference points the left and right operand to the same place.
@@ -116,9 +117,11 @@ function writeMsg() {
 writeMsg(); // call the function
 ?>
 ```
+
+
 ### 5. Explain why you would use a `foreach` loop instead of a `for` loop, when using data in an associative array.
 
-The conversation here is between numerical vs. associative.  In an associative array PHP references the items in the array by name rather than by number. You give each element in the array an identifying name and explanatory string value.  I would use a `foreach` loop instead of a `for` loop to create a loop that extracts values to the variables, since associative arrays contain items referenced by name using the **index => value** format and they do not require numeric indexing.
+The conversation here is between numerical vs. associative.  In an associative array PHP references the items in the array by name rather than by number. You give each element in the array an identifying name and explanatory string value.  I would use a `foreach` loop instead of a `for` loop to create a loop that extracts values to the variables, since associative arrays contain items referenced by name using the **key => value** format.
 
 **Example: for loop**
 
@@ -149,6 +152,7 @@ foreach ($myfriends as $name => $city)
 
 Omitting a break from a switch means you would not exit the case statement from which the break was omitted, but it seems to be the default behavior to end each switch with a break. Perhaps omitting the break could be helpful if you want to run multiple case statements sequentially.
 
+
 ### 7. Explain the difference between public, private, and protected for class properties and methods.
 
 * Public: any code could directly access and change the values for these class properties and methods
@@ -156,25 +160,31 @@ Omitting a break from a switch means you would not exit the case statement from 
 * Protected: class properities and methods can be accessed within the class itself and by inherited classes
 * var: treated as public
 
+
 ### 8. Explain what it means to define a method as abstract.
 
 Defining a method as abstract means to implement the method outside of the abstract class, where it can also be modified.  If you have an `abstract class Man` and an `abstract public function Run()` you could implement the abstract function `Run()` in a more specific child class, `class Nathan extends Man`. In the context of OOP PHP it could help the programmer follow good coding standards.
+
 
 ### 9. Explain what it means to define a method as static.
 
 PHP OOP views a static attribute as shared by every object and can be called using the object reference operator `::`. It does not require instantiation. If you had a `class Man` and created a method `static function Run();` you could call it using `echo Man::run();`  Creating a static method could be useful if you know the value is not going to change.
 
+
 ### 10. Explain what it means to define a method as final.
 
 A final attribute is constant and methods within extended classes of the parent class cannnot override the method with a final attribute.
+
 
 ### 11. When running PHP from the command line, describe how to access command input data inside the script.
 
 Usage syntax looks like this `php <file> [--] [args...]`
 
+
 ### 12. When fetching content with an HTTP request, describe how to get header information from the response.
 
 The `get_headers` URL function fetches header information
+
 
 ## Code Examples
 
@@ -203,6 +213,7 @@ Now, the statement to be executed is an `ifelse` statement. Why this control str
 
 Moving along, initialize an array `$fruitStore = array();` and iterate over the array using a `foreach` construct, because we want to output a string describing the color and new amount(count) of *each* fruit. The variable here is `$fruit_counts` the `$key` is `$fruit` and `$value` is `$count`. The code to be executed uses the array access operator `[]` and `{}` curly braces for defining inital values in array declarations. The output is a string first accessing the new {$count} value, then accessing the color of the fruit and then name of the fruit.
 
+
 ### 2.
 
 ```
@@ -224,7 +235,7 @@ class BaseModel
 	}
 }
 
-class FancyModel extends BaseModel
+class FruitModel extends BaseModel
 {
 
 	$sql = "SELECT fruit_id, fruit_name FROM fruits ORDER BY fruit_name DESC"; 
@@ -237,8 +248,50 @@ class FancyModel extends BaseModel
    }
 }
 ```
+In this attempt I have created a FruitModel class that extends the BaseModel class (inheritance), defines a query and method to perform the query, then use the mysql function `mysql_fetch_assoc` to fetch a result row(s) as an associative array.
+
 
 ### 3.
 
+Attempt to create an MVC Controller that outputs a list of fruit id and name and view loading method:
+
+```
+<?php
+class FruitModel extends CI_Controller {
+
+        public function fruits($fruit_id, $fruit_name)
+        {
+                echo $fruit_id;
+                echo $fruit_name;
+        }
+        
+         public function index()
+        {
+                $data[array]
+                $this->load->view('fruit_index', $data);
+        }
+}
+?>
+```
+
+View file:
+
+```
+<<!DOCTYPE html>
+<html>
+<head>
+	<title><?php echo $title;?></title>
+</head>
+<body>
+	<h1><?php echo $heading;?></h1>
+	
+	<?php foreach ($variable as $key => $value):?>
+
+                <ul><?php echo $value;?></ul>
+
+        <?php endforeach;?>
+        
+</body>
+</html>
 
 
