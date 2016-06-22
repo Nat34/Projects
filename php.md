@@ -177,6 +177,9 @@ Usage syntax looks like this `php <file> [--] [args...]`
 The `get_headers` URL function fetches header information
 
 ## Code Examples
+
+### 1. 
+
 ```
 $fruit_counts=array('apple'=>3, 'banana'=>4, 'orange'=>0);
 $fruit_colors=array('apple'=>'red', 'banana'=>'yellow', 'orange'=>'orange', 'plum'=>'purple');
@@ -194,10 +197,48 @@ $fruitStore = array();
 foreach ($fruit_counts as $fruit => $count) {
 	$fruitStore[] = "There are {$count} {$fruit_colors[$fruit]} {$fruit}s.</br>";
 ```
-It helps me to try and explain what is going on here. I also really enjoy writing it out.  The `foreach` construct is iterating over the `$fruit_colors` array.  On each iteration, the value of the current element (first iteration = 'apple') is assigned to $value (first iteration = 'red.'). 
+It helps me to try and explain what is going on here. The `foreach` construct is iterating over the `$fruit_colors` array.  On each iteration, the value of the current element (first iteration = 'apple') is assigned to $value (first iteration = 'red.'). 
 
 Now, the statement to be executed is an `ifelse` statement. Why this control structure? We want something to happen if a certain condition is met, and something different if the condition is not met.  In this instance, we want to add a fruit of each color and we must take into account that `'plum'=>'purple'` is null, therefore the expression evaluated is *if $fruit_counts is set* (`isset` determines if a variable is set and not null in the fruit_counts index).  When this expression evaluates **TRUE** the code to execute is an arithmetic operation of `$fruit_counts[$fruit] + 1` and sets `$fruit_counts[$fruit]` a new value.  We are using the array access operator `[]` to specify a location within an array, pointing to `$fruit`.  When this expression evaluates **FALSE** the code to execute is the assignment of a value to the `$fruit_counts[$fruit]` that is not set. In this instance `'plum'=>'purple'`. 
 
-Moving along, initialize an array `$fruitStore = array();` and iterate over the array using a `foreach` construct, because we want to output a string describing the color and new amount(count) of *each* fruit. The variable here is `$fruit_counts` the `$key` is `$fruit` and `$value` is `$count`. The code to be executed uses the array access operator `[]` and '{}' curly braces for defining inital values in array declarations. The output is a string first accessing the new {$count} value, then accessing the color of the fruit and then name of the fruit.
+Moving along, initialize an array `$fruitStore = array();` and iterate over the array using a `foreach` construct, because we want to output a string describing the color and new amount(count) of *each* fruit. The variable here is `$fruit_counts` the `$key` is `$fruit` and `$value` is `$count`. The code to be executed uses the array access operator `[]` and `{}` curly braces for defining inital values in array declarations. The output is a string first accessing the new {$count} value, then accessing the color of the fruit and then name of the fruit.
+
+### 2.
+
+```
+class BaseModel
+{
+	protected static $db_conn;
+	
+	protected static function &db()
+	{
+		if (empty(BaseModel::$db_conn))
+		{
+			BaseModel::$db_conn = @new mysqli('localhost', 'user', 'password', 'db');
+			if (BaseModel::$db_conn->connect_error)
+			{
+				die('Connect Error: ' . BaseModel::$db_conn->connect_error);
+			}
+		}
+		return BaseModel::$db_conn;
+	}
+}
+
+class FancyModel extends BaseModel
+{
+
+	$sql = "SELECT fruit_id, fruit_name FROM fruits ORDER BY fruit_name DESC"; 
+	$result = mysql_query($sql);
+
+	function mysql_fetch_all($result) {
+   		while($row=mysql_fetch_assoc($result)) {
+       		echo $row["fruit_id"];
+    		echo $row["fruit_name"];
+   }
+}
+```
+
+### 3.
+
 
 
