@@ -143,13 +143,13 @@ foreach ($myfriends as $name => $city)
 ```
 ### 6. Describe an example of when omitting a break from a switch case would be helpful.
 
-Omitting a break from a switch means you would not exit the control structure, but it seems to be the default behavior to end each switch with a break. Perhaps omitting the break could be helpful if you want to run multiple case statements.
+Omitting a break from a switch means you would not exit the case statement from which the break was omitted, but it seems to be the default behavior to end each switch with a break. Perhaps omitting the break could be helpful if you want to run multiple case statements.
 
 ### 7. Explain the difference between public, private, and protected for class properties and methods.
-	* Public: any code could directly access and change the values for these class properties and methods
-	* Private: class properties and methods cannot be accessed outside of the class itself
-	* Protected: class properities and methods can be accessed within the class itself and by inherited classes
-	* var: treated as public
+**Public:** any code could directly access and change the values for these class properties and methods
+**Private:** class properties and methods cannot be accessed outside of the class itself
+**Protected:** class properities and methods can be accessed within the class itself and by inherited classes
+**var:** treated as public
 ### 8. Explain what it means to define a method as abstract.
 
 Defining a method as abtract means to modify the properties after inheritance.
@@ -159,6 +159,8 @@ Defining a method as abtract means to modify the properties after inheritance.
 **When is it helpful**
 
 ### 9. Explain what it means to define a method as static.
+
+PHP OOP views a static attribute as shared by every object and can be called using the object reference operator `::`. It does not have to be instantiated.
 
 
 ### 10. Explain what it means to define a method as final
