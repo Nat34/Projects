@@ -146,10 +146,10 @@ foreach ($myfriends as $name => $city)
 Omitting a break from a switch means you would not exit the case statement from which the break was omitted, but it seems to be the default behavior to end each switch with a break. Perhaps omitting the break could be helpful if you want to run multiple case statements.
 
 ### 7. Explain the difference between public, private, and protected for class properties and methods.
-**Public:** any code could directly access and change the values for these class properties and methods
-**Private:** class properties and methods cannot be accessed outside of the class itself
-**Protected:** class properities and methods can be accessed within the class itself and by inherited classes
-**var:** treated as public
+	* Public: any code could directly access and change the values for these class properties and methods
+	* Private: class properties and methods cannot be accessed outside of the class itself
+	* Protected: class properities and methods can be accessed within the class itself and by inherited classes
+	* var: treated as public
 ### 8. Explain what it means to define a method as abstract.
 
 Defining a method as abtract means to modify the properties after inheritance.
@@ -163,10 +163,19 @@ Defining a method as abtract means to modify the properties after inheritance.
 PHP OOP views a static attribute as shared by every object and can be called using the object reference operator `::`. It does not have to be instantiated.
 
 
-### 10. Explain what it means to define a method as final
+### 10. Explain what it means to define a method as final.
 
 ### 11. When running PHP from the command line, describe how to access command input data inside the script.
 
+Usage syntax looks like this `php <file> [--] [args...]` or `php file.php --myargument = whatever`
+
 ### 12. When fetching content with an HTTP request, describe how to get header information from the response.
+
+The `get_headers` URL function fetches header information
+
+## Code Examples
+```
+$fruit_counts=array('apple'=>3, 'banana'=>4, 'orange'=>0);
+$fruit_colors=array('apple'=>'red', 'banana'=>'yellow', 'orange'=>'orange', 'plum'=>'purple');
 
 
