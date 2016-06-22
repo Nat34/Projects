@@ -166,10 +166,12 @@ foreach ($myfriends as $name => $city)
 Omitting a break from a switch means you would not exit the case statement from which the break was omitted, but it seems to be the default behavior to end each switch with a break. Perhaps omitting the break could be helpful if you want to run multiple case statements.
 
 ### 7. Explain the difference between public, private, and protected for class properties and methods.
-	* Public: any code could directly access and change the values for these class properties and methods
-	* Private: class properties and methods cannot be accessed outside of the class itself
-	* Protected: class properities and methods can be accessed within the class itself and by inherited classes
-	* var: treated as public
+
+* Public: any code could directly access and change the values for these class properties and methods
+* Private: class properties and methods cannot be accessed outside of the class itself
+* Protected: class properities and methods can be accessed within the class itself and by inherited classes
+* var: treated as public
+* 
 ### 8. Explain what it means to define a method as abstract.
 
 Defining a method as abtract means to modify the properties after inheritance.
@@ -198,4 +200,17 @@ The `get_headers` URL function fetches header information
 $fruit_counts=array('apple'=>3, 'banana'=>4, 'orange'=>0);
 $fruit_colors=array('apple'=>'red', 'banana'=>'yellow', 'orange'=>'orange', 'plum'=>'purple');
 
+foreach ($fruit_colors as $fruit => $color) {
+	if (isset($fruit_counts[$fruit])) {
+		$fruit_counts[$fruit] = $fruit_counts[$fruit] + 1;
+	} else {
+		$fruit_counts[$fruit] = 1;
+	}
+}
 
+$fruitStore = array();
+
+foreach ($fruit_counts as $fruit => $count) {
+	$fruitStore[] = "There are {$count} {$fruit_colors[$fruit]} {$fruit}s.</br>";
+```
+It helps me to try and explain what is going on here. I also really enjoy writing it out.  The `foreach` construct is iterating over the `$fruit_colors` array.  On each iteration, the value of the current element (first iteration = 'apple') is assigned to $value (first iteration = 'red.'). Now, the statement to be executed is an `ifelse` statement. Why this control structure? We want something to happen if a certain condition is met, and something different if the condition is not met.  In this instance, we want to add a fruit of each color and we must take into account that `'plum'=>'purple'` is null, therefore the expression evaluated is *if $fruit_counts is set* (`isset` determines if a variable is set and not null in the fruit_counts index).  When this expression evaluates **TRUE** the code to execute is an arithmetic operation of `$fruit_counts[$fruit] + 1` and sets `$fruit_counts[$fruit]` a new value.  We are using the array access operator `[]` to specify a location within an array, pointing to `$fruit`.  When this expression evaluates **FALSE** the code to execute is the assignment of a value to the `$fruit_counts[$fruit]` that is not set. In this instance `'plum'=>'purple'`. Moving along, initialize an array `$fruitStore = array();` and iterate over the array using a `foreach` construct, because we want to output a string describing the color and new amount(count) of *each* fruit. The variable here is `$fruit_counts` the `$key` is `$fruit` and `$value` is `$count`. The code to be executed uses the array access operator `[]` and '{}' curly braces for defining inital values in array declarations. The output is a string first accessing the new {$count} value, then accessing the color of the fruit and then name of the fruit.
