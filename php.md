@@ -117,7 +117,7 @@ writeMsg(); // call the function
 
 The conversation here is between numerical vs. associative.  In an associative array PHP references the items in the array by name rather than by number. You give each element in the array an identifying name and explanatory string value.  I would use a `foreach` loop instead of a `for` loop to create a loop that extracts values to the variables, since associative arrays contain items referenced by name using the **index => value** format and they do not require numeric indexing.
 
-**Examples**
+**Example: for loop**
 
 ```
 <?php
@@ -126,7 +126,9 @@ $friends = array('Alejandro', 'Andrea', 'Emma', 'Kate', 'Sean',);
 for ($i = 0 ; $i <= 4 ; ++$i)
 	echo "<br>$i: $friends[$i]<br>";
 ?>
-```	
+```
+**Example foreach loop**
+
 ```
 <?php
 echo "<br>";
@@ -141,6 +143,24 @@ foreach ($myfriends as $name => $city)
 
 ?>
 ```
+**Modify Array Data**
+
+```
+<?php
+echo "<br>";
+$myfriends = array('Emma' => "Bridgeport",
+                 'Alejandro' => "Spain",
+                 'Kate' => "Denver",
+                 'Andrea' => "Cicero",
+                 'Sean' => "Quincy");
+
+foreach ($myfriends as $name => $city)
+        echo "$name lives in $city!<br>";
+
+?>
+```
+
+
 ### 6. Describe an example of when omitting a break from a switch case would be helpful.
 
 Omitting a break from a switch means you would not exit the case statement from which the break was omitted, but it seems to be the default behavior to end each switch with a break. Perhaps omitting the break could be helpful if you want to run multiple case statements.
