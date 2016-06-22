@@ -253,7 +253,7 @@ In this attempt I have created a FruitModel class that extends the BaseModel cla
 
 ### 3.
 
-Attempt to create an MVC Controller that outputs a list of fruit id and name and view loading method:
+Attempt to create an MVC Controller that outputs a fruit id and name, view loading method, and view file that uses the output string array to display the strings in an unordered list.
 
 ```
 <?php
