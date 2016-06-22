@@ -49,6 +49,7 @@ print $x; //output 5
 ?>
 
 ```
+
 ### 3. Explain the difference between the "==" operator and the "===" operator.
 
 The Equal operator returns true if `$x` is equal to `$y`. The Identical operator returns true if `$x` is equal to `$y`, and they are of the same type. Both are comparison operators. The `===` operator can be used to distinguish boolean from non-boolean values.
@@ -95,6 +96,8 @@ To pass a variable by reference to a function
 
 1. Declare the function by giving the function  a name that reflects what the function does
 2. Specify the variable after the function name, inside the parentheses with the reference sign on the variable.  
+
+Passing a variable by reference to a function allows the function to modify the variable.
 
 ```
 function functionName(&$a) {
@@ -155,24 +158,19 @@ Omitting a break from a switch means you would not exit the case statement from 
 
 ### 8. Explain what it means to define a method as abstract.
 
-Defining a method as abtract means to implement the method outside of the abstract class.  
-
-**Example**
-
-**When is it helpful**
-
-In the context of OOP PHP it could help the programmer follow good coding standards.
+Defining a method as abstract means to implement the method outside of the abstract class, where it can also be modified.  If you have an `abstract class Man` and an `abstract public function Run()` you could implement the abstract function `Run()` in a more specific child class, `class Nathan extends Man`. In the context of OOP PHP it could help the programmer follow good coding standards.
 
 ### 9. Explain what it means to define a method as static.
 
-PHP OOP views a static attribute as shared by every object and can be called using the object reference operator `::`. It does not have to be instantiated.
-
+PHP OOP views a static attribute as shared by every object and can be called using the object reference operator `::`. It does not require instantiation. If you had a `class Man` and created a method `static function Run();` you could call it using `echo Man::run();`  Creating a static method could be useful if you know the value is not going to change.
 
 ### 10. Explain what it means to define a method as final.
 
+A final attribute is constant and methods within extended classes of the parent class cannnot override the method with a final attribute.
+
 ### 11. When running PHP from the command line, describe how to access command input data inside the script.
 
-Usage syntax looks like this `php <file> [--] [args...]` or `php file.php --myargument = whatever`
+Usage syntax looks like this `php <file> [--] [args...]`
 
 ### 12. When fetching content with an HTTP request, describe how to get header information from the response.
 
@@ -201,3 +199,5 @@ It helps me to try and explain what is going on here. I also really enjoy writin
 Now, the statement to be executed is an `ifelse` statement. Why this control structure? We want something to happen if a certain condition is met, and something different if the condition is not met.  In this instance, we want to add a fruit of each color and we must take into account that `'plum'=>'purple'` is null, therefore the expression evaluated is *if $fruit_counts is set* (`isset` determines if a variable is set and not null in the fruit_counts index).  When this expression evaluates **TRUE** the code to execute is an arithmetic operation of `$fruit_counts[$fruit] + 1` and sets `$fruit_counts[$fruit]` a new value.  We are using the array access operator `[]` to specify a location within an array, pointing to `$fruit`.  When this expression evaluates **FALSE** the code to execute is the assignment of a value to the `$fruit_counts[$fruit]` that is not set. In this instance `'plum'=>'purple'`. 
 
 Moving along, initialize an array `$fruitStore = array();` and iterate over the array using a `foreach` construct, because we want to output a string describing the color and new amount(count) of *each* fruit. The variable here is `$fruit_counts` the `$key` is `$fruit` and `$value` is `$count`. The code to be executed uses the array access operator `[]` and '{}' curly braces for defining inital values in array declarations. The output is a string first accessing the new {$count} value, then accessing the color of the fruit and then name of the fruit.
+
+
