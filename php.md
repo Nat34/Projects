@@ -131,7 +131,6 @@ for ($i = 0 ; $i <= 4 ; ++$i)
 
 ```
 <?php
-echo "<br>";
 $myfriends = array('Emma' => "Bridgeport",
                  'Alejandro' => "Spain",
                  'Kate' => "Denver",
@@ -139,31 +138,13 @@ $myfriends = array('Emma' => "Bridgeport",
                  'Sean' => "Quincy");
 
 foreach ($myfriends as $name => $city)
-        echo "$name lives in $city!<br>";
-
+        echo "$name lives in $city.<br>";
 ?>
 ```
-**Modify Array Data**
-
-```
-<?php
-echo "<br>";
-$myfriends = array('Emma' => "Bridgeport",
-                 'Alejandro' => "Spain",
-                 'Kate' => "Denver",
-                 'Andrea' => "Cicero",
-                 'Sean' => "Quincy");
-
-foreach ($myfriends as $name => $city)
-        echo "$name lives in $city!<br>";
-
-?>
-```
-
 
 ### 6. Describe an example of when omitting a break from a switch case would be helpful.
 
-Omitting a break from a switch means you would not exit the case statement from which the break was omitted, but it seems to be the default behavior to end each switch with a break. Perhaps omitting the break could be helpful if you want to run multiple case statements.
+Omitting a break from a switch means you would not exit the case statement from which the break was omitted, but it seems to be the default behavior to end each switch with a break. Perhaps omitting the break could be helpful if you want to run multiple case statements sequentially.
 
 ### 7. Explain the difference between public, private, and protected for class properties and methods.
 
@@ -174,11 +155,13 @@ Omitting a break from a switch means you would not exit the case statement from 
 
 ### 8. Explain what it means to define a method as abstract.
 
-Defining a method as abtract means to modify the properties after inheritance.
+Defining a method as abtract means to implement the method outside of the abstract class.  
 
 **Example**
 
 **When is it helpful**
+
+In the context of OOP PHP it could help the programmer follow good coding standards.
 
 ### 9. Explain what it means to define a method as static.
 
